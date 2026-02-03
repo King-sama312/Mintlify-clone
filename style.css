@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color: #ffffff;
+}
+body {
+  height: 100vh;
+}
+
+.background-img {
+  position: fixed;
+  z-index: -1;
+}
+
+.navbar,
+.nav-right,
+.nav-center {
+  display: flex;
+}
+
+.nav-center {
+  font-size: 0.9rem;
+  font-weight: bold;
+  gap: 22px;
+}
+
+.navbar {
+  position: sticky;
+  align-items: center;
+  justify-content: space-around;
+  background-color: transparent;
+  padding: 1rem 6rem 1rem 5rem;
+}
+
+.nav-left > img {
+  height: 24px;
+  width: 104px;
+}
+.nav-right {
+  gap: 9px;
+}
+
+.contact-btn {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 35px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.144);
+  padding: 10px;
+  border: none;
+}
+
+.free-start-btn {
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 35px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: none;
+}
+
+.to-article {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
+.badge {
+  display: flex;
+  padding: 5px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.13);
+  border: none;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 35px;
+}
+
+.badge p {
+  font-size: 15px;
+}
+
+.green-btn {
+  font-size: 10px;
+  border-radius: 35px;
+  height: 1.5rem;
+  width: 3rem;
+  padding: 5px;
+  background-color: #0d8c5d;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.right-arrow {
+  width: 15px;
+  height: 15px;
+}
+
+.hero-mid-part {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+.hero-mid-part h1 {
+  font-size: 3.25rem;
+  text-align: center;
+}
+
+.hero-mid-part p {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  width: 25.9rem;
+}
+
+.email-form {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 22.5rem;
+  padding: 0.25rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.email-form input {
+  padding: 5px;
+  background-color: rgba(0, 0, 0, 0.13);
+  border: none;
+  color: white;
+  border-radius: 35px;
+}
