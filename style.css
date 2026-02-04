@@ -2,22 +2,46 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  color: #ffffff;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  color: #fff;
 }
 body {
   height: 100vh;
 }
 
+.hero-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
 .background-img {
-  position: fixed;
+  position: absolute;
+  inset: 0;
   z-index: -1;
+}
+
+.background-img img {
+  position: absolute;
 }
 
 .navbar,
 .nav-right,
 .nav-center {
   display: flex;
+  position: relative;
+  z-index: 2;
 }
 
 .nav-center {
@@ -26,16 +50,23 @@ body {
   gap: 22px;
 }
 
+.nav-center p {
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
 .navbar {
-  position: sticky;
+  /* position: sticky; */
+  /* top: 0; */
   align-items: center;
   justify-content: space-around;
-  background-color: transparent;
+  background-color: rgb(153 142 142 / 6%);
   padding: 1rem 6rem 1rem 5rem;
 }
 
 .nav-left > img {
-  height: 24px;
+  height: 22px;
   width: 104px;
 }
 .nav-right {
@@ -43,23 +74,29 @@ body {
 }
 
 .contact-btn {
-  font-weight: bold;
+  font-weight: 500;
   font-size: 15px;
   border-radius: 35px;
+  height: 2rem;
+  width: 7rem;
   color: white;
   background-color: rgba(128, 128, 128, 0.144);
-  padding: 10px;
+  padding: 0px;
   border: none;
+  cursor: pointer;
 }
 
 .free-start-btn {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 15px;
   border-radius: 35px;
+  height: 2rem;
+  width: 7rem;
   background-color: white;
   color: black;
-  padding: 10px;
+  padding: 0px;
   border: none;
+  cursor: pointer;
 }
 
 .to-article {
@@ -78,6 +115,7 @@ body {
   align-items: center;
   gap: 5px;
   border-radius: 35px;
+  cursor: pointer;
 }
 
 .badge p {
@@ -115,27 +153,97 @@ body {
 
 .hero-mid-part p {
   text-align: center;
-  margin-top: 1.5rem;
-  font-size: 1.15rem;
+  margin-top: 1rem;
+  font-size: 1.05rem;
   width: 25.9rem;
 }
 
 .email-form {
+  margin-top: 1rem;
   display: flex;
-  align-items: center;
-  text-align: center;
-  margin-top: 2rem;
   width: 100%;
   max-width: 22.5rem;
   padding: 0.25rem;
   border-radius: 9999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+}
+
+.email-form input::placeholder {
+  color: #aed6d3;
+  opacity: 1;
 }
 
 .email-form input {
-  padding: 5px;
-  background-color: rgba(0, 0, 0, 0.13);
-  border: none;
-  color: white;
+  padding: 18px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 35px;
+  width: 100%;
+  height: 2rem;
+  outline: none;
+}
+
+.email-form button {
+  position: absolute;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 35px;
+  width: auto;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  border: none;
+  cursor: pointer;
+  right: 10px;
+  top: 10px;
+}
+
+.middle-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.hero-image img {
+  border-radius: 25px;
+}
+
+
+.users-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  margin-left: 12rem;
+}
+
+.users-grid {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  grid-template-columns: repeat(4, 250px);
+  grid-template-rows: repeat(4, 64px);
+}
+
+.user-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+}
+
+.paypal-logo img{
+  height: 50px;
+  width: 120px;
+}
+
+.microsoft-logo, .coinbase-logo{
+  width: 115px;
+}
+
+.x-logo{
+  padding-left: 3rem;
 }
