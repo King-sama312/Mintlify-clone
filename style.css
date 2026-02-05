@@ -17,7 +17,7 @@
   color: #fff;
 }
 body {
-  height: 100vh;
+  height: 100%;
 }
 
 .hero-container {
@@ -179,7 +179,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 35px;
   width: 100%;
-  height: 2rem;
+  height: 2.5rem;
   outline: none;
 }
 
@@ -195,7 +195,7 @@ body {
   border: none;
   cursor: pointer;
   right: 10px;
-  top: 10px;
+  top: 8px;
 }
 
 .middle-part {
@@ -209,8 +209,7 @@ body {
   border-radius: 25px;
 }
 
-
-.users-flex{
+.users-flex {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -235,15 +234,320 @@ body {
   width: 50px;
 }
 
-.paypal-logo img{
+.paypal-logo img {
   height: 50px;
   width: 120px;
 }
 
-.microsoft-logo, .coinbase-logo{
+.microsoft-logo,
+.coinbase-logo {
   width: 115px;
 }
 
-.x-logo{
+.x-logo {
   padding-left: 3rem;
+}
+
+.feature-text-and-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text p {
+  color: #393a3b;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+
+.text h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  gap: 6px;
+  border: 1px solid #d3cece;
+  border-radius: 20px;
+  height: 32rem;
+  width: 30rem;
+}
+
+.green-heading-sm {
+  color: #0c8c5e;
+  font-size: small;
+  font-weight: 400;
+  padding: 20px;
+}
+
+.description {
+  color: black;
+  font-weight: 500;
+  padding: 20px;
+  margin-top: -29px;
+}
+
+.para {
+  color: #393a3b;
+  padding: 20px;
+  margin-top: -29px;
+}
+
+.assistant-card {
+  display: flex;
+  flex-direction: column;
+  width: 72.5%;
+  margin-top: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d3cece;
+  border-radius: 30px;
+  padding: 24px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.enterprise-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  margin-top: 8rem;
+  padding-bottom: 10rem;
+}
+
+.enterprise-text-and-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  height: 10rem;
+}
+
+.enterprise-text {
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+}
+
+.enterprise-text h3 {
+  padding: 1px;
+}
+
+.enterprise-text h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+.enterprise-text p {
+  padding-top: 50px;
+  padding-left: 1px;
+}
+
+.enterprise-btn button {
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 35px;
+  height: 2.15rem;
+  width: 12rem;
+  background-color: black;
+  padding: 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.enterprise-btn {
+  display: flex;
+  height: 21rem;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.enterprise-card-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 9rem;
+}
+
+.enterprise-card {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  width: 32rem;
+}
+
+.enterprise-card h2 {
+  color: black;
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.enterprise-card p {
+  color: #373839;
+  margin-top: 9px;
+}
+
+.enterprise-banner {
+  background-image:
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)),
+    url(assets/swappy-20260202-010618.png);
+  height: 520px;
+  width: 1028px;
+  background-repeat: no-repeat;
+  background-size: 105% auto;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  padding: 4rem;
+}
+
+.enterprise-banner:hover {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(assets/swappy-20260202-010618.png);
+}
+
+.enterprise-banner h3 {
+  font-size: 12px;
+}
+
+.enterprise-banner h2 {
+  margin-top: 25px;
+}
+
+.enterprise-banner p {
+  margin-top: 30px;
+}
+
+.enterprise-banner p span svg {
+  width: 10px;
+  rotate: -90deg;
+}
+
+.banner-text-wrapper {
+  display: flex;
+  margin-top: 5rem;
+  gap: 1.25rem;
+}
+.banner-text h1 {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.banner-text p {
+  color: #d3cece;
+  font-weight: 500;
+  margin-top: 1px;
+}
+
+.enterprise-user-companies{
+  display: flex;
+  margin-top: 3rem;
+  gap: 6rem;
+}
+
+.carousel {
+  overflow: hidden;
+}
+
+.track {
+  margin: 0px 200px;
+  display: flex;
+  gap: 2rem;
+}
+
+.carousel-card {
+  max-width: 400px;
+}
+
+.image-container {
+  background-size: 120% auto;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  width: 400px;
+  height: 290px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+.image-container img {
+  filter: brightness(0) saturate(100%) invert(1);
+}
+.carousel-card p {
+  color:#393a3b;
+}
+
+.carousel-card button {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 2rem;
+  color: #393a3b;
+}
+.carousel-card button span svg {
+  width: 10px;
+  rotate: -90deg;
+}
+.carousel-card button:hover {
+  color: #0c8c5e;
+  cursor: pointer;
+}
+
+.carousel-button {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.carousel-button span {
+  margin: 5px;
+}
+
+.feedback-heading{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.feedback-heading h1{
+  color: black;
+  font-size: 2.5rem;
+}
+
+.feedback-heading p{
+  color: #393a3b;
+  font-weight: 500;
+  font-size:1.15rem;
+  margin-top: 10px;
 }
